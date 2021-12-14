@@ -1,3 +1,7 @@
+body {
+  background: #eee !important;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +9,29 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.align-select {
+  position: relative;
+  right: 66px;
+}
+
+.align-select-text {
+  position: relative;
+  left: 66px;
+}
+
+.text-align {
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+input[type="text"],
+textarea {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,11 +55,85 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-div {
+  width: 23%;
+  float: left;
+  text-align: center;
+  border-radius: 10px;
+  border: #ccc 1px solid;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  margin: 15px;
+  background: #fff;
+  position: relative;
+}
+.card-name-header {
+  background: #000000;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-padding {
+  padding: 15px;
+}
+.card-image img {
+  width: 200px;
+}
+.card-image {
+  text-align: center;
+}
+.card-social-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.card-social-icons ul {
+  margin: 0px;
+  padding: 0px;
+}
+.card-social-icons ul li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+}
+.card-social-icons ul li img {
+  width: 25px;
+}
+.card-div .card-body {
+  min-height: 150px;
+  padding-bottom: 30px;
+}
+.card-div .card-body p {
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 76px;
+}
+.card-div:hover {
+  background: #7bbaf92e;
+}
+
+@media screen and (min-width: 180px) and (max-width: 768px) {
+  .card-div {
+    width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.search-inner-div {
+  width: 500px;
+  display: flex;
+  padding: 40px 0px 0px 0px;
+  margin: auto;
+}
+.search-box .form-control {
+  flex: 1;
+}
+.filter-lunch {
+  padding-top: 30px;
+  margin: auto;
 }
